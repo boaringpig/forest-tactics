@@ -1,0 +1,61 @@
+{
+  "stages": [
+    {
+      "id": "stage1",
+      "name": "Forest Clearing",
+      "width": 8,
+      "height": 8,
+      "tiles": [
+        "g","g","g","g","g","g","g","g",
+        "g","f","g","g","g","g","f","g",
+        "g","g","g","g","g","g","g","g",
+        "g","g","g","g","g","g","g","g",
+        "g","g","g","g","w","g","g","g",
+        "g","f","g","g","g","g","g","g",
+        "g","g","g","g","g","g","f","g",
+        "g","g","g","g","g","g","g","g"
+      ],
+      "playerSpawns": [
+        {"col": 0, "row": 3},
+        {"col": 0, "row": 4},
+        {"col": 1, "row": 3}
+      ],
+      "enemySpawns": [
+        {"type": "trapper", "col": 7, "row": 3},
+        {"type": "logger", "col": 6, "row": 2},
+        {"type": "hunter", "col": 7, "row": 5}
+      ],
+      "objective": "defeat_all",
+      "description": "Clear the trappers from the forest clearing."
+    },
+    {
+      "id": "stage2",
+      "name": "Logging Camp",
+      "width": 10,
+      "height": 8,
+      "tiles": [
+        "g","g","g","g","g","g","g","g","g","g",
+        "g","f","f","g","g","g","g","g","f","g",
+        "g","f","g","g","g","g","g","g","g","g",
+        "g","g","g","g","g","g","g","g","g","g",
+        "g","g","g","g","g","m","g","g","g","g",
+        "g","g","g","g","g","m","g","g","g","g",
+        "g","f","g","g","g","g","g","g","f","g",
+        "g","g","g","g","g","g","g","g","g","g"
+      ],
+      "playerSpawns": [
+        {"col": 0, "row": 3},
+        {"col": 0, "row": 4},
+        {"col": 1, "row": 3}
+      ],
+      "enemySpawns": [
+        {"type": "logger", "col": 9, "row": 2},
+        {"type": "logger", "col": 8, "row": 4},
+        {"type": "trapper", "col": 9, "row": 6},
+        {"type": "hunter", "col": 7, "row": 3}
+      ],
+      "objective": "defeat_all",
+      "description": "Stop the loggers from destroying the forest."
+    }
+  ]
+}

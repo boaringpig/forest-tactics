@@ -1,0 +1,8 @@
+{
+  "items": [
+    { "id": "healing_berry", "name": "Healing Berry", "type": "consumable", "effect": "heal", "value": 3, "description": "A forest berry that restores 3 HP." },
+    { "id": "sharpened_claw", "name": "Sharpened Claw", "type": "equipment", "slot": "weapon", "attackBonus": 1, "description": "Sharpened claws for extra damage." },
+    { "id": "bark_armor", "name": "Bark Armor", "type": "equipment", "slot": "armor", "defenseBonus": 1, "description": "Tough bark worn as protective armor." },
+    { "id": "acorn_bomb", "name": "Acorn Bomb", "type": "consumable", "effect": "damage", "value": 2, "range": 3, "description": "An acorn that explodes on impact for 2 damage." }
+  ]
+}
