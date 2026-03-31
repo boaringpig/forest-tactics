@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forest Tactics</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="game-container">
+    <canvas id="gameCanvas" width="900" height="600"></canvas>
+    <div id="ui-overlay">
+      <div id="turn-indicator" class="player-turn">Player Turn</div>
+      <div id="turn-counter">Turn 1</div>
+      <div id="unit-panel">
+        <h3 id="unit-panel-name">Select a unit</h3>
+        <div id="unit-panel-body"></div>
+      </div>
+      <div id="action-menu" style="display:none;">
+        <button id="btn-move" class="btn-move">Move</button>
+        <button id="btn-attack" class="btn-attack">Attack</button>
+        <button id="btn-skill" class="btn-skill">Skill</button>
+        <button id="btn-wait" class="btn-wait">Wait</button>
+        <button id="btn-end-turn" class="btn-end-turn">End Turn</button>
+      </div>
+      <div id="skill-menu"></div>
+      <div id="action-log"></div>
+      <div id="tooltip"></div>
+      <div id="game-over-overlay">
+        <div id="game-over-title">Victory</div>
+        <div id="game-over-subtitle">The forest is safe... for now.</div>
+        <button id="btn-next-stage">Next Stage</button>
+        <button id="btn-restart">Restart</button>
+        <button id="btn-main-menu">Main Menu</button>
+      </div>
+      <div id="main-menu-overlay">
+        <div id="main-menu-title">Forest Tactics</div>
+        <div id="main-menu-subtitle">Defenders of the Ancient Wood</div>
+        <button class="menu-btn" id="btn-start-campaign">Start Campaign</button>
+        <button class="menu-btn" id="btn-how-to-play">How to Play</button>
+        <div class="menu-instructions">Click units to select &bull; Move / Attack / Skill / Wait &bull; End Turn to pass</div>
+      </div>
+      <div id="howto-overlay" style="position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.92);display:none;flex-direction:column;justify-content:center;align-items:center;z-index:100;pointer-events:all;">
+        <div style="max-width:500px;text-align:left;padding:20px;">
+          <h2 style="color:#7ec87e;margin-bottom:16px;letter-spacing:2px;">HOW TO PLAY</h2>
+          <div style="font-size:12px;color:#c0e0c0;line-height:1.8;">
+            <p><b style="color:#7ec8e3;">Select</b> a unit by clicking it on the board.</p>
+            <p><b style="color:#7ec8e3;">Move</b> &mdash; click Move, then click a blue tile to move there.</p>
+            <p><b style="color:#7ec8e3;">Attack</b> &mdash; click Attack, then click a red-highlighted enemy.</p>
+            <p><b style="color:#7ec8e3;">Skill</b> &mdash; choose a skill from the submenu, then select a target.</p>
+            <p><b style="color:#7ec8e3;">Wait</b> &mdash; skip this unit's remaining actions for the turn.</p>
+            <p><b style="color:#7ec8e3;">End Turn</b> &mdash; finish all player actions and let enemies act.</p>
+            <br>
+            <p><b style="color:#a0d0a0;">Units:</b></p>
+            <p><b>Bear (B)</b> &mdash; Tough brawler. Moves forward or sideways. Knockback skill.</p>
+            <p><b>Wolf (W)</b> &mdash; Nimble striker. L-shaped movement. Howl buffs attack.</p>
+            <p><b>Crow (C)</b> &mdash; Flying scout. Flies anywhere within range 5. Long-range dive.</p>
+            <br>
+            <p><b style="color:#a0d0a0;">Terrain:</b> Forest tiles provide cover (+1 defense). Water and Mountains are impassable.</p>
+            <br>
+            <p><b style="color:#e07070;">Defeat all enemies</b> to win the stage.</p>
+          </div>
+          <button id="btn-close-howto" style="margin-top:20px;background:rgba(20,40,20,0.9);color:#c0e0c0;border:1px solid #4a7a4a;border-radius:5px;padding:10px 24px;font-family:'Courier New',monospace;font-size:13px;cursor:pointer;text-transform:uppercase;letter-spacing:1px;">Back</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+{
+  "campaigns": [
+    {
+      "id": "campaign1",
+      "name": "Defenders of the Forest",
+      "description": "The humans encroach on the ancient forest. You must defend your home.",
+      "stages": ["stage1", "stage2"],
+      "startingUnits": ["bear", "wolf", "crow"]
+    }
+  ]
+}

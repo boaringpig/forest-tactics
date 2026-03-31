@@ -1,0 +1,55 @@
+{
+  "units": [
+    {
+      "id": "bear",
+      "name": "Bear",
+      "type": "bear",
+      "hp": 12,
+      "maxHp": 12,
+      "attack": 4,
+      "defense": 3,
+      "movement": 4,
+      "movementType": "bear",
+      "skills": [
+        { "id": "swipe", "name": "Swipe", "type": "attack", "range": 1, "damage": 4, "effect": null },
+        { "id": "knockback", "name": "Mighty Shove", "type": "special", "range": 1, "damage": 2, "effect": "knockback", "knockbackDistance": 2 }
+      ],
+      "color": "#8B4513",
+      "symbol": "B"
+    },
+    {
+      "id": "wolf",
+      "name": "Wolf",
+      "type": "wolf",
+      "hp": 8,
+      "maxHp": 8,
+      "attack": 3,
+      "defense": 1,
+      "movement": 3,
+      "movementType": "wolf",
+      "skills": [
+        { "id": "bite", "name": "Bite", "type": "attack", "range": 1, "damage": 3, "effect": null },
+        { "id": "howl", "name": "Howl", "type": "buff", "range": 0, "damage": 0, "effect": "attackUp", "duration": 2 }
+      ],
+      "color": "#708090",
+      "symbol": "W"
+    },
+    {
+      "id": "crow",
+      "name": "Crow",
+      "type": "crow",
+      "hp": 5,
+      "maxHp": 5,
+      "attack": 2,
+      "defense": 0,
+      "movement": 5,
+      "movementType": "crow",
+      "skills": [
+        { "id": "peck", "name": "Peck", "type": "attack", "range": 1, "damage": 2, "effect": null },
+        { "id": "dive", "name": "Dive Bomb", "type": "attack", "range": 3, "damage": 3, "effect": null, "aoe": false }
+      ],
+      "color": "#1a1a2e",
+      "symbol": "C"
+    }
+  ]
+}
